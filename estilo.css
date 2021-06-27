@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo-tela {
+    height: 100%;
+    display: flex;
+}
+
+.corpo-tela .corpo-lista {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 300px;
+    border-right: 1px solid #ccc;
+}
+
+.corpo-tela .corpo-lista .corpo-lista-header{
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.corpo-tela .corpo-lista .corpo-lista-header .titulo{
+    font-size: 24px;
+}
+
+.corpo-tela .corpo-lista .corpo-lista-dados{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.corpo-tela .corpo-lista .corpo-lista-dados .corpo-lista-dados-item{
+    padding: 20px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.corpo-tela .corpo-lista .corpo-lista-dados .corpo-lista-dados-item:hover{
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.corpo-tela .corpo-edicao {
+    flex-grow: 1;
+}
